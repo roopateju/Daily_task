@@ -10,7 +10,6 @@
     font-family: 'Arial', sans-serif;
   }
   
-  /* Center the layout vertically and horizontally */
   .layout {
     display: flex;
     flex-direction: column;
@@ -32,7 +31,7 @@
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 350px; /* Maximum width for the form */
+    max-width: 350px; 
     text-align: center;
   }
   
@@ -68,35 +67,21 @@
   }
   
   button:active {
-    transform: scale(0.98); /* Button press effect */
+    transform: scale(0.98);
   }
   
-  #upload-status {
-    margin-top: 20px;
-    font-size: 1.1rem;
-    color: #555;
-  }
   
-  #upload-status.success {
-    color: #4CAF50; 
-  }
-  
-  #upload-status.error {
-    color: #e74c3c; 
-  }
-  
-  /* Responsive Design: Ensure good layout on smaller screens */
   @media (max-width: 400px) {
     form {
       padding: 20px;
-      width: 90%; /* Make the form wider on mobile */
+      width: 90%;
     }
   
     h1 {
       font-size: 1.5rem;
     }
   
-    input[type="file"], button[type="submit"] {
+    input, button{
       font-size: 1rem;
     }
   }
